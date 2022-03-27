@@ -1,0 +1,33 @@
+So I have used 3 maps:
+
+    words_index: 
+        Stores the Words as key and an array of indexes(key in "ADD key value") in which that particular
+        word is present as value. The elements are added in the array in such a way that the order of 
+        indexes are maintained(with the help of map: index_order).
+        This makes it easy to search for a given word with a time complexity of O(1).
+        eg:
+        the : [16 56]
+        second : [56 25]
+        log : [16 56 25]
+        again : [25]
+        third : [16]
+
+    index_words:
+        Stores the index and the words corresponding to it as key, value pair. 
+        This helps to search for a given index if it is already present( time complexity: O(1)) and 
+        replace it with the new words.
+        eg:
+        16 : [the third log]
+        25 : [again second log]
+        56 : [the second log]
+
+    index_order:
+        Stores the index and occurance no. of that index
+        This helps to maintain the order of each indexes so that we can display it in the correct order.
+        eg:
+        25 : 1
+        56 : 2
+        16 : 3
+
+* I have used 3 hashmaps to reduce the time complexity of the program for every searching operation
+* I have deleted the earliest log if the logs Count exceed the given max size of logs 

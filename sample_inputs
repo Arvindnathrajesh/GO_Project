@@ -1,0 +1,21 @@
+4
+ADD 3 my name is 
+ADD 4 name is arvind 
+ADD 5 you are name 
+ADD 4 is name you 
+END 
+
+
+2
+ADD 25 the first
+SEARCH the 1
+ADD 56 the second log
+SEARCH the 2
+ADD 25 again second log
+SEARCH second 2
+ADD 16 the third log
+SEARCH the 3
+SEARCH fourth 1
+END
+
+

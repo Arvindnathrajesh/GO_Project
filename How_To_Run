@@ -1,5 +1,5 @@
 1. Clone the repo
-2. Go to the currect directory: 100msGo
+2. Go to the currect directory: GO_Project
 3. Enter in terminal: go run main.go (GO shd be installed in the system)
 4. Paste any sample input in the console
 5. Output will be displayed

@@ -19,3 +19,14 @@ SEARCH fourth 1
 END
 
 
+2
+ADD 25 the first
+SEARCH the 1
+ADD 56 the second log
+SEARCH the 2
+ADD 25 again second log
+SEARCH second 2
+ADD 16 the third log
+SEARCH log 1
+SEARCH fourth 1
+END

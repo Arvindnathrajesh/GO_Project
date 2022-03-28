@@ -20,6 +20,8 @@ var index_words = map[int][]string{}
 var index_order = map[int]int{}
 var count int=0
 var Total_Logs_Count int=0
+var initial_log_no int=1
+
 func removeIndexesInWords_index(index int){ 
 	oldWordsArr := index_words[index]
 	noOldWords := len(oldWordsArr)
@@ -87,12 +89,12 @@ func ADD(words []string, index int) {
 			words_index[word] = append([]int{index}, words_index[word]...)  //adding indexes to words_index for each word
 		}
 		if Total_Logs_Count>s{                       //if the max logs are more than s
-			minValue := 100000
 			var minKey int
 			for key, value := range index_order {    // get the log number(index) which is initially added
-				if value<minValue {
-					minValue=value
+				if value==initial_log_no {
 					minKey=key
+					initial_log_no++
+					break
 				}
 			}
 			removeIndexesInWords_index(minKey)    // deleteing the initial most log
